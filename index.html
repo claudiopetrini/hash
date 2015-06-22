@@ -59,10 +59,17 @@
             </div>
           </div>
 
+         <div class="row">
+            <div class="input-field col s12">
+              <input disabled=""  value="{{sha1Hashed}}" id="sha1hash" type="text" class="validate">
+              <label for="sha1hash" class="active">SHA1</label>
+            </div>
+          </div>
+
           <div class="row">
             <div class="input-field col s12">
-              <input disabled=""  value="{{sha256Hashed}}" id="sha2565hash" type="text" class="validate">
-              <label for="sha2565hash" class="active">SHA256</label>
+              <input disabled=""  value="{{sha256Hashed}}" id="sha256hash" type="text" class="validate">
+              <label for="sha256hash" class="active">SHA256</label>
             </div>
           </div>
 
@@ -101,6 +108,8 @@
     </div>
     -->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      <script src="./bower_components/forge/js/forge.min.js"></script>
+
       <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
       <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
       <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha512.js"></script>

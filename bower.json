@@ -1,0 +1,19 @@
+{
+  "name": "hash",
+  "version": "0.0.0",
+  "homepage": "https://github.com/claudiopetrini/hash",
+  "authors": [
+    "Claudio Petrini <claudio.petrini@stamplay.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "forge": "~0.6.30"
+  }
+}
