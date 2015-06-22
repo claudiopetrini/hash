@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Hash!</title>
+  <meta name="description" content="Hash string">
+  <link rel="apple-touch-icon" href="img/icon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./img/icon.jpg" type="image/jpg" sizes="16x16">
+
+</head>
+    <body ng-app="app">
+
+      <nav class="bg-blue-stamplay" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#" class="brand-logo">Hash darling!</a>
+          <!--
+          <ul class="right hide-on-med-and-down">
+            <li><a href="https://github.com/claudiopetrini/hash" target="_blank">Source code</a></li>
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="https://github.com/claudiopetrini/hash" target="_blank">Source code</a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        -->
+        </div>
+      </nav>
+
+
+      <div class="section no-pad-bot" id="index-banner" ng-controller="hash">
+
+        <div class="container">
+
+
+          <div class="input-field">
+            <i class="mdi-editor-mode-edit prefix"></i>
+            <input id="icon_prefix" 
+                      type="text" 
+                      class="validate" 
+                      ng-model="cleartext"  
+                      ng-change="hashme()" >
+            <label for="icon_prefix">Cleartext</label>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input disabled=""  value="{{md5Hashed}}" id="md5hash" type="text" class="validate">
+              <label for="md5hash" class="active">MD5</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input disabled=""  value="{{sha256Hashed}}" id="sha2565hash" type="text" class="validate">
+              <label for="sha2565hash" class="active">SHA256</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input disabled=""  value="{{sha512Hashed}}" id="sha512hash" type="text" class="validate">
+              <label for="sha512hash" class="active">SHA512</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input disabled=""  value="{{sha3Hashed}}" id="sha3hash" type="text" class="validate">
+              <label for="sha3hash" class="active">SHA3</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input disabled=""  value="{{ripemdHashed}}" id="ripemdhash" type="text" class="validate">
+              <label for="ripemdhash" class="active">RIPEMD-160</label>
+            </div>
+          </div>
+
+          
+          <br><br>
+
+        </div>
+      </div>
+
+    <!--
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="text-blue-stamplay text-lighten-3" href="https://github.com/claudiopetrini">Claudio Petrini</a> - All the hash functions are computed client side
+      </div>
+    </div>
+    -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+      <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
+      <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha512.js"></script>
+      <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+      <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/ripemd160.js"></script>  
+      <script type="text/javascript" src="./js/main.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+    <script type="text/javascript">
+
+      (function ($) {
+        $(function () {
+
+          $('.button-collapse').sideNav();
+
+        }); // end of document ready
+      })(jQuery); // end of jQuery name space
+
+    </script>
+    </body>
+</html>
