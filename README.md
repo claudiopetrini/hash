@@ -6,6 +6,7 @@ Client side hashing made easy. Demo [here](https://hash.stamplayapp.com)
 - MD5
 - SHA1
 - SHA256
+- SHA384
 - SHA512
 - SHA3
 - RIPEMD-160
