@@ -1,5 +1,5 @@
 # Hash
-Client side hashing made easy. Demo [https://hash.stamplayapp.com](here)
+Client side hashing made easy. Demo [here](https://hash.stamplayapp.com)
 
 ## Supported hashes
 
