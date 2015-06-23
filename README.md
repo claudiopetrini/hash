@@ -1,4 +1,5 @@
 # Hash
+
 Client side hashing made easy. Demo [here](https://hash.stamplayapp.com)
 
 ## Supported hashes
@@ -10,3 +11,9 @@ Client side hashing made easy. Demo [here](https://hash.stamplayapp.com)
 - SHA512
 - SHA3
 - RIPEMD-160
+
+## Build
+
+In order to build the project run:
+
+```bower install && npm install && grunt build```
