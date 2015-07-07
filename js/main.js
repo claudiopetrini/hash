@@ -2,11 +2,17 @@
 'use strict';
 
 
-angular.module('app', []);
+angular.module('app', ['zeroclipboard']);
 
 angular
 	.module('app')
-	.config(function () {});
+	.config(['uiZeroclipConfigProvider', function (uiZeroclipConfigProvider) {
+
+		// config ZeroClipboard
+		uiZeroclipConfigProvider.setZcConf({
+			swfPath: '../bower_components/zeroclipboard/dist/ZeroClipboard.swf'
+		});
+	}]);
 
 angular
 	.module('app')
